@@ -1,0 +1,92 @@
+/***********************************************************
+ * These styles apply for native components on Android.
+ * Read more about native styles at http://docs.appgyver.com
+ ***********************************************************/
+
+navigation-bar {
+  background-color: #e17141;
+  color: #ffffff;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+navigation-bar title {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+navigation-bar button {
+  color: #ffffff;
+  font-weight: 300;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+navigation-bar back-indicator {
+  background-image: url(default_back_icon.png);
+  background-size: 32px;
+}
+
+navigation-bar back-button {
+  color: #ffffff;
+  font-weight: 300;
+}
+
+/**************************************
+ *  Tab Bar
+ *************************************/
+
+tab-bar {
+  background-color: #ffffff;
+  border-top: 1px #d8d8d8 solid;
+}
+
+tab-bar tab-bar-item {
+  color: #b0b1b4;
+  font-family: "Roboto";
+  font-size: 10px;
+  -webkit-filter: grayscale(56%);
+}
+
+tab-bar tab-bar-item:selected {
+  color: #e17141;
+  -webkit-filter: none;
+}
+
+tab-bar divider {
+  background-color: #D8D8D8;
+}
+
+tab-bar tab-bar-item marker-top:selected {
+  background-color: #e17141;
+}
+
+navigation-bar .menu {
+	background-image: url(/image/menu.png);
+    background-color: #CCC;
+}
+
+tab-bar-item {
+    background-size: 60px 60px;
+}
+
+tab-bar-item:selected {
+    background-size: 60px 60px;
+}
+
+tab-bar-item#index {
+    background-image: url(/image/home_icon.png);
+}
+
+tab-bar-item#organization {
+    background-image: url(/image/organization_icon.png);
+}
+
+tab-bar-item#colony {
+    background-image: url(/image/contacts_icon.png);
+}
+
+tab-bar-item#mine {
+    background-image: url(/image/message_icon.png);
+}

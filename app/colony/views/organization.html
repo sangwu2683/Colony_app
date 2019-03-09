@@ -1,0 +1,18 @@
+<div ng-controller="organizationController">
+    <super-navbar>
+        <super-navbar-button side="left" location="colony#organization-add">发布活动</super-navbar-button>
+        <super-navbar-title>
+            活动
+        </super-navbar-title>
+        <super-navbar-button side="right" location="colony#organizations">推荐</super-navbar-button>
+    </super-navbar>
+    <style type="text/css">
+        html,body{margin:0;padding:0;}
+        .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+        .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+    </style>
+
+    <!--百度地图容器-->
+    <div style="width:100%;height:550px;border:#ccc solid 1px;" id="dituContent"></div>
+</div>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZjgymlvXnhGEIcsZt98TsxYhQ1Q5vquv"></script>

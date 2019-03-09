@@ -1,0 +1,47 @@
+<div>
+	<super-navbar>
+	    <super-navbar-title>
+	        菌落
+	    </super-navbar-title>
+	</super-navbar>
+    <form name="form" ng-submit="sign()" role="form">
+    <div>
+        <label class="item item-icon-left item-input">
+            <input id="username" type="text" placeholder="用户名" required>
+        </label>
+        <label class="item item-icon-left item-input">
+            <input id="password" type="password" placeholder="密码" required>
+        </label>
+    </div>
+    <button class="button button-block" style="width:80%; margin: 10px auto; border-radius: 5px; background-color:#e17141; color:white" ng-click="login()">发布</button>
+    </form>
+</div>
+<script type="text/javascript">
+	
+	var users = [{
+		"username" : "admin",
+		"password" : "admin"
+	}, {
+		"username" : "user",
+		"password" : "123456"
+	}];
+	localStorage.users = JSON.stringify(users);
+
+	var login = function() {
+		var users = JSON.parse(localStorage.users);
+		var username = $("#username").text();
+		var password = $("#password").text();
+
+		for (var i=0; i<users.length; i++) {
+			if (users[i].username == username) {
+				if (users[i].password == password) {
+					var currentUser = users[i];
+					localStorage.currentUser = JSON.stringify(currentUser);
+
+					window.location.href = "colony#index";
+				}
+			}
+		}
+	}
+
+</script>

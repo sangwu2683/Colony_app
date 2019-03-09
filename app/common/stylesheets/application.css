@@ -1,0 +1,76 @@
+.supersonic-navbar-mock {
+  background-color: #00B5FF !important;
+  text-align: center;
+  font-weight: 600;
+}
+super-navbar-title {
+	display: none;
+}
+html, body, body>div {
+	height: 100%;
+}
+a {
+    text-decoration: none;
+}
+
+img {
+	display:block;
+}
+::-webkit-scrollbar {
+	display: compact;
+}
+.list {
+	overflow-x:hidden;
+	-webkit-overflow-scrolling: touch;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform-style: preserve-3d;
+	height: 100%;
+}
+.list.bottom {
+	height: auto;
+}
+.stars li {
+	float: left;
+	line-height: 12px;
+}
+
+.stars .star_size {
+	width:10px;
+	height:10px;
+	vertical-align:top;
+}
+
+.load-more {
+	margin: 10px auto;
+	padding: 10px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.pull-to-refresh {
+	margin-top: -41px;
+}
+
+.right {
+	float:right;
+}
+.BMap_noprint.anchorBL {
+	display: none;
+}
+.item-image {
+	overflow: hidden;
+}
+.item-image img {
+	max-height: 100%;
+	max-width: 100%;
+    margin: auto;
+    top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+}
+
+.input-label {
+	color: #999;
+}

@@ -1,0 +1,19 @@
+<div ng-controller="addOrganizationController">
+	<super-navbar>
+	    <super-navbar-title>发布活动</super-navbar-title>
+	</super-navbar>
+    <form name="form" ng-submit="sign()" role="form">
+        <div>
+            <label class="item item-icon-left item-input">
+                <input name="name" type="text" placeholder="活动" required ng-model="name">
+            </label>
+            <label class="item item-icon-left item-input">
+                <input name="date" type="text" placeholder="时间" required ng-model="date">
+            </label>
+            <label class="item item-icon-left item-input">
+                <input name="address" type="text" placeholder="地点" required ng-model="address">
+            </label>
+        </div>
+        <button class="button button-block" style="width:80%; margin: 10px auto; border-radius: 5px; background-color:#e17141; color:white" ng-click="add()">发布</button>
+    </form>
+</div>
